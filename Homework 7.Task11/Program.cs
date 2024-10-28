@@ -4,15 +4,17 @@
     {
         static void Main(string[] args)
         {
-            string[] fullname = { "Naila Omarova", "Abdu Mehemmedov" };
+            Console.WriteLine(Names("Omarova Naila"));
+
         }
 
         /*11.Verilmiş fullnamelər siyahısından name-lər siyahısı düzəldən metod
          * (ad soyadlar siyahısındaki adları kəsib yeni bir arraye doldurub qaytarmalıdır)*/
 
-        public static void Names(string[] fullName)
+        public static string Names (string fullName)
         {
-            
+            var name = fullName.Substring(fullName.IndexOf(" "));
+            return name;
         }
     }
 }
